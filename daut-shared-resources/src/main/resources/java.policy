@@ -1,0 +1,9 @@
+
+grant codeBase "file:${user.home}/.m2/repository/-" {
+  permission java.security.AllPermission;
+};
+
+grant codeBase "file:${test.basedir}/-" {
+  permission java.security.AllPermission;
+};
+
