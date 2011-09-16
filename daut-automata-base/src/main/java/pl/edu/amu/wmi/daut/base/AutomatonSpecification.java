@@ -1,4 +1,4 @@
-package pl.amu.edu.wmi.daut.base;
+package pl.edu.amu.wmi.daut.base;
 
 import java.util.List;
 
@@ -41,11 +41,17 @@ abstract class AutomatonSpecification {
 
     /**
      * Zwraca listę wszystkich stanów.
+     *
+     * Stany niekoniecznie muszą być zwrócone w identycznej
+     * kolejności jak były dodane.
      */
     public abstract List<State> allStates();
 
     /**
      * Zwraca listę wszystkich przejść wychodzących ze stanu 'from'.
+     *
+     * Przejścia niekoniecznie muszą być zwrócone w identycznej
+     * kolejności jak były dodane.
      */
     public abstract List<OutgoingTransition> allOutgoingTransitions(State from);
 

@@ -1,4 +1,4 @@
-package pl.amu.edu.wmi.daut.base;
+package pl.edu.amu.wmi.daut.base;
 
 /**
  * Pusty interfejs dla stanów.

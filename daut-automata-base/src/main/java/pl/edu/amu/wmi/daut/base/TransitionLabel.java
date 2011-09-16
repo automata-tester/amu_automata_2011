@@ -1,4 +1,4 @@
-package pl.amu.edu.wmi.daut.base;
+package pl.edu.amu.wmi.daut.base;
 
 /**
  * Interfejs reprezentujący etykietę przejścia (np. pojedynczy znak, zbiór znaków,

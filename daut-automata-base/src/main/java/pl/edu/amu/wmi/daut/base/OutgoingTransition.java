@@ -1,4 +1,4 @@
-package pl.amu.edu.wmi.daut.base;
+package pl.edu.amu.wmi.daut.base;
 
 /**
  * Klasa reprezentująca przejście wychodzące, tzn. etykietę przejścia plus
@@ -7,7 +7,7 @@ package pl.amu.edu.wmi.daut.base;
  * Stan źródłowy nie jest tu uwzględniany.
  */
 class OutgoingTransition {
-    public OutgoingTransition(State targetState, TransitionLabel transitionLabel) {
+    public OutgoingTransition(TransitionLabel transitionLabel, State targetState) {
         targetState_ = targetState;
         transitionLabel_ = transitionLabel;
     }
