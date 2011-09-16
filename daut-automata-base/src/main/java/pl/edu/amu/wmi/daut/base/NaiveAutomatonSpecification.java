@@ -12,7 +12,7 @@ import java.util.LinkedList;
 class NaiveAutomatonSpecification extends AutomatonSpecification {
 
     /**
-     * Stan to po prostu liczba.
+     * Stan to po prostu pusta klasa. Liczy się tylko tożsamość instancji.
      *
      * Dlaczego ta klasa jest zadeklarowana jako statyczna?
      * Odpowiedź na stronie: http://download.oracle.com/javase/tutorial/java/javaOO/nested.html
@@ -22,14 +22,7 @@ class NaiveAutomatonSpecification extends AutomatonSpecification {
          * Konstruuje stan.
          */
         public NaiveState() {
-            id_ = counter_++;
         }
-
-        // licznik, z każdym nowym stanem zwiększany o 1
-        private static int counter_ = 0;
-
-        private int id_;
-
     }
 
     /**

@@ -77,6 +77,9 @@ public class TestNaiveAutomatonSpecification extends TestCase {
         assertFalse(spec.isFinal(r1));
         assertTrue(spec.isFinal(r2));
         assertSame(r0, spec.getInitialState());
+        assertNotSame(r0, r1);
+        assertNotSame(r0, r2);
+        assertNotSame(r1, r2);
 
         List<State> states = spec.allStates();
 
