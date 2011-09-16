@@ -1,0 +1,14 @@
+<FindBugsFilter>
+    <Match>
+      <Bug pattern="DM_EXIT" />
+    </Match>
+    <Match>
+      <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+    </Match>
+    <Match>
+      <Bug pattern="SE_BAD_FIELD_STORE" />
+    </Match>
+    <Match>
+      <Bug pattern="OBL_UNSATISFIED_OBLIGATION" />
+    </Match>
+</FindBugsFilter>
