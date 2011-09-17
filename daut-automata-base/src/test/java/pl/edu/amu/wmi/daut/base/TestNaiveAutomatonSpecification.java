@@ -23,6 +23,10 @@ public class TestNaiveAutomatonSpecification extends TestCase {
             return false;
         }
 
+        public boolean canAcceptCharacter(char c) {
+            return c == ch_;
+        }
+
         public char getChar() {
             return ch_;
         }
@@ -66,6 +70,9 @@ public class TestNaiveAutomatonSpecification extends TestCase {
             r1 = r0Outs.get(0).getTargetState();
             r2 = r0Outs.get(1).getTargetState();
             assertEquals(((TestTransition)r0Outs.get(1).getTransitionLabel()).getChar(), 'b');
+            assertTrue(((TestTransition)r0Outs.get(1).getTransitionLabel()).canAcceptCharacter('b'));
+            assertFalse(((TestTransition)r0Outs.get(1).getTransitionLabel()).canAcceptCharacter('c'));
+            assertFalse(((TestTransition)r0Outs.get(1).getTransitionLabel()).canBeEpsilon());
         }
         else {
             // kolejność może być odwrócona

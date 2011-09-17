@@ -11,4 +11,9 @@ interface TransitionLabel {
      * bez "zjedzenia" znaku z wejścia.
      */
     public boolean canBeEpsilon();
+
+    /**
+     * Zwraca true wgdy przejście może nastąpić po znaku 'c'.
+     */
+    public boolean canAcceptCharacter(char c);
 }
