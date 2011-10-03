@@ -43,7 +43,7 @@ abstract class AutomatonSpecification {
      * Zwraca listę wszystkich stanów.
      *
      * Stany niekoniecznie muszą być zwrócone w identycznej
-     * kolejności jak były dodane.
+     * kolejności, jak były dodane.
      */
     public abstract List<State> allStates();
 
@@ -51,7 +51,7 @@ abstract class AutomatonSpecification {
      * Zwraca listę wszystkich przejść wychodzących ze stanu 'from'.
      *
      * Przejścia niekoniecznie muszą być zwrócone w identycznej
-     * kolejności jak były dodane.
+     * kolejności, jak były dodane.
      */
     public abstract List<OutgoingTransition> allOutgoingTransitions(State from);
 
@@ -61,7 +61,7 @@ abstract class AutomatonSpecification {
     public abstract State getInitialState();
 
     /**
-     * Zwraca true wgdy stan jest stanem końcowym.
+     * Zwraca true, wgdy stan jest stanem końcowym.
      */
     public abstract boolean isFinal(State state);
 };
